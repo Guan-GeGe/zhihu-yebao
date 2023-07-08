@@ -2,14 +2,14 @@ import WHRequest from "..";
 // 获取今日信息 轮播图信息
 export const queryNewsLatest = () => {
   return WHRequest.get({
-    url: "/api/news_latest",
+    url: "/news_latest",
   });
 };
 
 // 获取往日新闻信息
 export const queryNewsBefore = (time) => {
   return WHRequest.get({
-    url: "/api/news_before",
+    url: "/news_before",
     params: {
       time,
     },
@@ -19,7 +19,7 @@ export const queryNewsBefore = (time) => {
 // 获取新闻详细信息
 export const queryNewsInfo = (id) => {
   return WHRequest.get({
-    url: "/api/news_info",
+    url: "/news_info",
     params: {
       id,
     },
@@ -29,7 +29,7 @@ export const queryNewsInfo = (id) => {
 // 获取新闻点赞信息
 export const queryStoryExtra = (id) => {
   return WHRequest.get({
-    url: "/api/story_extra",
+    url: "/story_extra",
     params: {
       id,
     },
@@ -39,7 +39,7 @@ export const queryStoryExtra = (id) => {
 // 获取短信验证码
 export const querySmsCode = (phone) => {
   return WHRequest.post({
-    url: "/api/phone_code",
+    url: "/phone_code",
     data: {
       phone,
     },
@@ -51,7 +51,7 @@ export const querySmsCode = (phone) => {
 // 登录/注册
 export const queryLogin = (phone, code) => {
   return WHRequest.post({
-    url: "/api/login",
+    url: "/login",
     data: {
       phone,
       code,
@@ -64,19 +64,19 @@ export const queryLogin = (phone, code) => {
 // 获取登陆信息
 export const queryUserInfo = () => {
   return WHRequest.get({
-    url: "/api/user_info",
+    url: "/user_info",
   });
 };
 // 获取收藏信息
 export const queryStoreList = () => {
   return WHRequest.get({
-    url: "/api/store_list",
+    url: "/store_list",
   });
 };
 // 收藏新闻
 export const storePost = (newsId) => {
   return WHRequest.post({
-    url: "/api/store",
+    url: "/store",
     data: { newsId },
   });
 };
@@ -84,7 +84,7 @@ export const storePost = (newsId) => {
 // 取消收藏
 export const storeRemove = (id) => {
   return WHRequest.get({
-    url: "/api/store_remove",
+    url: "/store_remove",
     params: { id },
   });
 };
