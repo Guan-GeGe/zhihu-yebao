@@ -21,7 +21,6 @@ export default defineConfig({
         ],
       ],
     }),
-    "@babel/plugin-syntax-jsx",
   ],
   resolve: {
     // alias: { "@": path.resolve(__dirname, "src") },
