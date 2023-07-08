@@ -1,0 +1,58 @@
+.swiperBox {
+  width: 750px;
+  height: 750px;
+  box-sizing: border-box;
+  background: #eee;
+  .swiperadm {
+    height: 100%;
+    a {
+      display: block;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .desc {
+        position: absolute;
+        padding: 30px;
+        bottom: 0;
+        font-size: 25px;
+        // 间距
+        line-height: 40px;
+        .title {
+          font-weight: bold;
+          color: #fff;
+        }
+        .author {
+          color: #b8bcc9;
+        }
+      }
+    }
+    :global(.adm-swiper-indicator) {
+      position: absolute;
+      bottom: 0.38rem;
+      left: 90%;
+      transform: translateX(-50%);
+      :global(.adm-page-indicator) {
+        :global(.adm-page-indicator-dot.adm-page-indicator-dot-active) {
+          width: 30px;
+          height: 5px;
+          background: #fff;
+          border-radius: 10px;
+        }
+        :global(.adm-page-indicator-dot) {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .newsItem {
+    .listItem {
+      :global(.adm-list-item-content) {
+        border-top: red;
+      }
+    }
+  }
+}

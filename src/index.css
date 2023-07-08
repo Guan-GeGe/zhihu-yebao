@@ -1,0 +1,34 @@
+/* @import url("normalize.css"); */
+html {
+  font-size: 100px;
+}
+html,
+body {
+  height: 100%;
+  background: #f4f4f4;
+}
+#root {
+  margin: 0 auto;
+  max-width: 750px;
+  min-height: 100%;
+  background-color: #fff;
+}
+.box {
+  width: 3.28rem;
+  height: 1.64rem;
+  line-height: 1.64rem;
+  text-align: center;
+  font-size: 0.4rem;
+}
+:root:root {
+  /* --adm-font-size-1: 30px;
+  --adm-font-size-2: 30px;
+  --adm-font-size-3: 30px;
+  --adm-font-size-4: 30px;
+  --adm-font-size-5: 30px;
+  --adm-font-size-6: 30px;
+  --adm-font-size-7: 30px;
+  --adm-font-size-8: 30px;
+  --adm-font-size-9: 30px;
+  --adm-font-size-10: 30px; */
+}
