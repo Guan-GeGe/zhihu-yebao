@@ -2,7 +2,7 @@ import WHRequest from "..";
 // 获取今日信息 轮播图信息
 export const queryNewsLatest = () => {
   return WHRequest.get({
-    url: "/news_latest",
+    url: "/api/news_latest",
   });
 };
 
