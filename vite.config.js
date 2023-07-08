@@ -52,11 +52,17 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "/api": {
-        target: "https://news-at.zhihu.com/api/4",
+      "^/api/(.*)": {
+        // target: "https://news-at.zhihu.com/api/4",
+        target: "http://localhost:7100",
         changeOrigin: true,
         ws: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        rewrite: (path) => {
+          // 取消 /api/ 后面的部分
+          const newPath = path.replace(/^\/api\//, "");
+
+          return newPath;
+        },
       },
     },
   },

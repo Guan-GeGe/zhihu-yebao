@@ -2,8 +2,8 @@ import WHRequest from "./request";
 // import { BASE_URL, TIMEOUT } from "./request/config";
 import { storage } from "@/assets/utils";
 export default new WHRequest({
-  // baseURL: import.meta.env.VITE_BASIC_API,
-  baseURL: "https://news-at.zhihu.com/api/4",
+  baseURL: import.meta.env.VITE_BASIC_API,
+  // baseURL: "https://news-at.zhihu.com/api/4",
   timeout: 100000,
   interceptors: {
     requestInterceptor: (config) => {
